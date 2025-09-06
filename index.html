@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anaji Kadam | Data Analytics & AI Portfolio</title>
+  <meta name="description" content="Portfolio of Anaji Kadam — Data Analytics, ML, Data Engineering, Dashboards." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#home">AK</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download CV</a>
+    </nav>
+    <button id="menu" aria-label="Menu">☰</button>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Hello, I’m</p>
+      <h1>Anaji Kadam</h1>
+      <h2>Data Analyst • ML • Data Engineering</h2>
+      <p class="lead">
+        I turn raw data into clear insights and production-ready solutions across analytics,
+        machine learning, and data engineering.
+      </p>
+      <div class="cta">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="link" href="https://github.com/anajikadam35" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+    </div>
+    <img class="hero-img" src="assets/profile.jpg" alt="Anaji Kadam" />
+  </main>
+
+  <section id="about" class="section">
+    <h3>About</h3>
+    <p>
+      I’m a Data Analytics professional (DBS, Ireland) focused on fraud detection, NLP for misinformation,
+      and BI engineering. I build end-to-end pipelines, clean datasets, and deliver dashboards & ML models
+      that solve real problems. Recently: RF/GBM fraud detection (SMOTE, ROC-AUC), airline DW (star schema),
+      and real-time LSTM misinformation detector.
+    </p>
+  </section>
+
+  <section id="skills" class="section">
+    <h3>Skills</h3>
+    <ul class="pill-grid">
+      <li>Python</li><li>SQL</li><li>Pandas</li><li>Scikit-learn</li><li>Power BI</li>
+      <li>Azure / Databricks</li><li>Snowflake</li><li>ETL / ADF / SSIS</li><li>Git & CI/CD</li>
+      <li>LLMs (basics)</li><li>Tableau</li><li>Neo4j</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section">
+    <h3>Projects</h3>
+
+    <div class="cards">
+      <article class="card">
+        <h4>Credit Card Fraud Detection</h4>
+        <p>Imbalanced learning with SMOTE; Random Forest & Gradient Boosting; SHAP for explainability; high ROC-AUC.</p>
+        <div class="meta">
+          <span>Python</span><span>Sklearn</span><span>SMOTE</span>
+        </div>
+        <div class="links">
+          <a href="https://github.com/anajikadam35" target="_blank" rel="noopener">Code</a>
+          <a href="#" target="_blank" rel="noopener">Demo</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4>Airline Customer Satisfaction DW</h4>
+        <p>End-to-end BI: star schema, ETL (SSIS/ADF), and KPI dashboards. Improved refresh time & reporting speed.</p>
+        <div class="meta">
+          <span>SQL</span><span>SSIS/ADF</span><span>Power BI</span>
+        </div>
+        <div class="links">
+          <a href="https://github.com/anajikadam35" target="_blank" rel="noopener">Code</a>
+          <a href="#" target="_blank" rel="noopener">Dashboard</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h4>Real-time Misinformation Detection</h4>
+        <p>LSTM with GloVe; streaming inference; precision/recall optimized; simple FastAPI endpoint.</p>
+        <div class="meta">
+          <span>Python</span><span>LSTM</span><span>NLP</span>
+        </div>
+        <div class="links">
+          <a href="https://github.com/anajikadam35" target="_blank" rel="noopener">Code</a>
+          <a href="#" target="_blank" rel="noopener">Readme</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h3>Contact</h3>
+    <p>Open to roles and collaborations in Ireland & remote.</p>
+    <ul class="contact">
+      <li><a href="mailto:anajikadam35@gmail.com">anajikadam35@gmail.com</a></li>
+      <li><a href="https://github.com/anajikadam35" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/anaji-kadam" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Anaji Kadam</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
